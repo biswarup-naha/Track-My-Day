@@ -4,7 +4,7 @@ import TodoForm from './components/TodoForm';
 import TodoList from './components/TodoList';
 
 const App = () => {
-  const API_URI = import.meta.env.VITE_API_URL || "http://localhost:5000/tasks";
+  const API_URI = "https://track-my-day.onrender.com/tasks/";
   const [todos, setTodos] = useState([]);
   const [selectedTodos, setSelectedTodos] = useState(null);
 
