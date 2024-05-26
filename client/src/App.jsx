@@ -4,7 +4,7 @@ import TodoForm from './components/TodoForm';
 import TodoList from './components/TodoList';
 
 const App = () => {
-  const API_URI = "https://track-my-day.onrender.com/tasks/";
+  const API_URI = "http://localhost:5000/tasks" || "https://track-my-day.onrender.com/tasks/";
   const [todos, setTodos] = useState([]);
   const [selectedTodos, setSelectedTodos] = useState(null);
 
@@ -67,4 +67,4 @@ const App = () => {
   );
 }
 
-export default App
+export default App;
